@@ -1,0 +1,121 @@
+/* Visual "Tinta A3 — Negativo", as mesmas cores de src/Game/Ink.cs. */
+:root {
+  --paper: #141412;
+  --panel: #1c1b18;
+  --line: #2a2925;
+  --bone: #ece8dc;
+  --soft: #cfcabd;
+  --muted: #8d897e;
+  --red: #d0412b;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--soft);
+  font: 16px/1.65 "Zen Kaku Gothic New", system-ui, sans-serif;
+}
+
+main, header.top, footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--bone);
+  text-decoration: none;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.brand img { width: 32px; height: 32px; border-radius: 8px; }
+
+nav.lang a { margin-left: 12px; }
+
+a { color: var(--bone); text-underline-offset: 3px; text-decoration-color: var(--muted); }
+a:hover { text-decoration-color: var(--red); }
+
+h1, h2, h3 {
+  color: var(--bone);
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 { font-size: 34px; margin: 40px 0 6px; }
+h2 { font-size: 22px; margin: 40px 0 10px; padding-top: 20px; border-top: 1px solid var(--line); }
+h3 { font-size: 17px; margin: 24px 0 6px; }
+
+.meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+
+.caps {
+  color: var(--red);
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+ul { padding-left: 1.2em; }
+li { margin: 4px 0; }
+
+strong { color: var(--bone); font-weight: 500; }
+
+.box {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 20px 0;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 12px 0; }
+th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+th { color: var(--bone); font-weight: 500; }
+.table-wrap { overflow-x: auto; }
+
+/* Página inicial */
+.hero { text-align: center; padding: 48px 0 8px; }
+.hero img.icon { width: 112px; height: 112px; border-radius: 24px; }
+.hero h1 { margin-top: 20px; font-size: 40px; }
+.hero p { max-width: 520px; margin: 8px auto; }
+.shot { display: block; width: 100%; max-width: 300px; margin: 32px auto; border-radius: 18px; border: 1px solid var(--line); }
+
+.button {
+  display: inline-block;
+  margin: 20px 0 0;
+  padding: 12px 22px;
+  border: 1.5px solid var(--bone);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+footer a { margin-right: 14px; }
